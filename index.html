@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inredningsrådgivning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Välkommen till Inredningsrådgivning</h1>
+        <p>Din expert inom stil och funktion för ditt hem.</p>
+    </header>
+
+    <section id="services">
+        <h2>Våra tjänster</h2>
+        <div class="service">
+            <h3>Konsultation</h3>
+            <p>Vi erbjuder personliga konsultationer för att hjälpa dig att hitta den perfekta stilen för ditt hem.</p>
+        </div>
+        <div class="service">
+            <h3>Inredningsplanering</h3>
+            <p>Från idé till färdig plan - vi hjälper dig att planera ditt drömhem.</p>
+        </div>
+        <div class="service">
+            <h3>Shoppinghjälp</h3>
+            <p>Vi guidar dig genom shoppingdjungeln och hjälper dig att göra rätt val.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakta oss</h2>
+        <form id="contact-form">
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Skicka</button>
+        </form>
+        <p id="response-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Inredningsrådgivning. Alla rättigheter förbehållna.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
