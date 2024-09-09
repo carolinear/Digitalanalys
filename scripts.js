@@ -1,3 +1,19 @@
+document.getElementById('contact-btn').addEventListener('click', function() {
+    document.getElementById('contact-popup').style.display = 'block';
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.getElementById('contact-popup').style.display = 'none';
+});
+
+// Stänger popupen om användaren klickar utanför den
+window.addEventListener('click', function(event) {
+    const popup = document.getElementById('contact-popup');
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+});
+
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -12,9 +28,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     // Visar ett bekräftelsemeddelande
     document.getElementById('response-message').textContent = 'Tack för ditt meddelande! Vi hör av oss snart.';
-    
+
     // Tömmer formuläret efter inskickat meddelande
     document.getElementById('contact-form').reset();
+
+    // Stänger popupen efter att formuläret skickats
+    document.getElementById('contact-popup').style.display = 'none';
 });
 
 // Lägger till funktion för att förstora bilden när den klickas
