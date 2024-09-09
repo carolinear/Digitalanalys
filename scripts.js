@@ -16,3 +16,10 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Tömmer formuläret efter inskickat meddelande
     document.getElementById('contact-form').reset();
 });
+
+// Lägger till funktion för att förstora bilden när den klickas
+document.getElementById('room-image').addEventListener('click', function() {
+    const imageUrl = this.src;
+    const imageWindow = window.open("", "Image", "width=800,height=600");
+    imageWindow.document.write(`<img src="${imageUrl}" style="width:100%;height:auto;">`);
+});

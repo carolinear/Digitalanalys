@@ -38,6 +38,31 @@ p {
     border-radius: 5px;
 }
 
+#image-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #e9ecef;
+}
+
+.image-container {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 #contact {
     padding: 20px;
     background-color: #e2e2e2;
@@ -84,7 +109,7 @@ footer {
     padding: 10px;
     background-color: #333;
     color: white;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
